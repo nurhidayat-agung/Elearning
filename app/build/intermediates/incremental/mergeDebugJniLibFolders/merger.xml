@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/kazt/androidStudioProjects/Elearning/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/kazt/androidStudioProjects/Elearning/app/src/debug/jniLibs"/></dataSet></merger>

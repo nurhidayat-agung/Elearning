@@ -3,6 +3,7 @@ package agung.nurhidayat.elearning;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +21,22 @@ public class MenuUtama extends AppCompatActivity {
         Intent getData = getIntent();
         String namaguru = getData.getStringExtra("namaGuru");
         tvMenuWelcome.setText("Selamat Datang "+ namaguru);
+
+        ivMenuTambahMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goAdd = new Intent(MenuUtama.this, TambahMateri.class);
+                startActivity(goAdd);
+            }
+        });
+
+        ivMenuCariMateri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goCari = new Intent(MenuUtama.this, CariMateri.class);
+                startActivity(goCari);
+            }
+        });
         
 
     }

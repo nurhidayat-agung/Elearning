@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_guru"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="agung.nurhidayat.elearning.RegisterGuru">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="masukan Nama Guru"
+        android:id="@+id/edt_reg_nama_guru"/>
+    <!-- -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_reg_nama_guru"
+        android:hint="masukann Email Guru"
+        android:id="@+id/edt_reg_email_guru"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_reg_email_guru"
+        android:hint="masukan password"
+        android:inputType="textPassword"
+        android:id="@+id/edt_reg_pass_guru"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan mata pelajaran"
+        android:layout_below="@+id/edt_reg_pass_guru"
+        android:id="@+id/edt_reg_mapel_guru"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/edt_reg_mapel_guru"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_reg_reg_guru"/>
+</RelativeLayout>

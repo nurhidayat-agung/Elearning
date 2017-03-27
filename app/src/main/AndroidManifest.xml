@@ -10,17 +10,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterGuru">
-
-        </activity>
-        <activity android:name=".LoginGuru" >
+        <activity android:name=".RegisterGuru" />
+        <activity android:name=".LoginGuru">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuUtama"></activity>
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".TambahMateri" />
+        <activity android:name=".CariMateri">
+
+        </activity>
+        <activity android:name=".DetilMateri"></activity>
     </application>
 
 </manifest>
